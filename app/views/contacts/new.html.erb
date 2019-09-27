@@ -1,0 +1,16 @@
+<%= form_with(model: @contact, local: true) do |form| %>
+  <div class="contact_Name">
+   <%= form.label :Name %>
+   <%= form.text_field :Name %>
+  </div>
+  <div class="contact_Email">
+    <%= form.label :Email %>
+    <%= form.text_field :Email %>
+  </div>
+  <div class="contact_Content">
+    <%= form.label :Content %>
+    <%= form.text_field :Content %>
+  </div>
+  <%= form.submit %>
+
+<% end %>

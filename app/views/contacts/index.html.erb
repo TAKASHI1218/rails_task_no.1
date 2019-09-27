@@ -1,0 +1,20 @@
+<!-- <h1>Contacts#index</h1>
+<p>Find me in app/views/contacts/index.html.erb</p> -->
+
+
+<%= form_with(model: Contact.new) do |form| %>
+  <div class="contact_Name">
+   <%= form.label :Name %>
+   <%= form.text_field :Name %>
+  </div>
+  <div class="contact_Email">
+    <%= form.label :Email %>
+    <%= form.text_field :Email %>
+  </div>
+  <div class="contact_Content">
+    <%= form.label :Content %>
+    <%= form.text_field :Content %>
+  </div>
+  <%= form.submit %>
+
+<% end %>
