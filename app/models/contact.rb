@@ -1,5 +1,5 @@
 class Contact < ApplicationRecord
-  validates :Content, length: { in: 1..140 }
-  validates :Content, presence: true
-  validates :Content, length: { maximum: 140 }
+  validates :content, length: { in: 1..140 }
+  validates :content, presence: true
+  validates :content, length: { maximum: 140 }
 end

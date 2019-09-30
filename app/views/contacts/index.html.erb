@@ -3,17 +3,17 @@
 
 
 <%= form_with(model: Contact.new) do |form| %>
-  <div class="contact_Name">
-   <%= form.label :Name %>
-   <%= form.text_field :Name %>
+  <div class="contact_name">
+   <%= form.label :name %>
+   <%= form.text_field :name %>
   </div>
-  <div class="contact_Email">
-    <%= form.label :Email %>
-    <%= form.text_field :Email %>
+  <div class="contact_email">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
   </div>
-  <div class="contact_Content">
-    <%= form.label :Content %>
-    <%= form.text_field :Content %>
+  <div class="contact_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
   </div>
   <%= form.submit %>
 

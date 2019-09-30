@@ -7,8 +7,8 @@ class ContactsController < ApplicationController
   end
 
   def create
-   @contact = Contact.create(Name: params[:contact][:Name],
-                  Email: params[:contact][:Email],Content: params[:contact][:Content], )
+   @contact = Contact.create(name: params[:contact][:name],
+                  email: params[:contact][:email],content: params[:contact][:content], )
 
   if @contact.save
    redirect_to "/contacts/new"
